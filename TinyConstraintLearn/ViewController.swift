@@ -7,12 +7,20 @@
 //
 
 import UIKit
+import TinyConstraints
+
 
 class ViewController: UIViewController {
 
+    let view0 = CustomView(backgroundcolor: .purple, cornerRadius: 0 , borderWidth: 0)
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+
+
+       setupViews()
+        
+
     }
 
 

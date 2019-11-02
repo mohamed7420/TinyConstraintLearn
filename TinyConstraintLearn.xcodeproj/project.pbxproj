@@ -3,19 +3,25 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5CA76923ED88CFCBBF4A9FA4 /* Pods_TinyConstraintLearn.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 562E7B19EE1873F0A9AEB024 /* Pods_TinyConstraintLearn.framework */; };
 		BA3AC048236DC8B300299198 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA3AC047236DC8B300299198 /* AppDelegate.swift */; };
 		BA3AC04A236DC8B300299198 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA3AC049236DC8B300299198 /* SceneDelegate.swift */; };
 		BA3AC04C236DC8B300299198 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA3AC04B236DC8B300299198 /* ViewController.swift */; };
 		BA3AC04F236DC8B300299198 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BA3AC04D236DC8B300299198 /* Main.storyboard */; };
 		BA3AC051236DC8B600299198 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BA3AC050236DC8B600299198 /* Assets.xcassets */; };
 		BA3AC054236DC8B600299198 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BA3AC052236DC8B600299198 /* LaunchScreen.storyboard */; };
+		BA3AC05C236DCB3900299198 /* CustomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA3AC05B236DCB3900299198 /* CustomView.swift */; };
+		BA3AC05E236DCE2900299198 /* ControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA3AC05D236DCE2900299198 /* ControllerExtension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		120BB29AF9B51ADE1EFCB6B1 /* Pods-TinyConstraintLearn.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TinyConstraintLearn.debug.xcconfig"; path = "Target Support Files/Pods-TinyConstraintLearn/Pods-TinyConstraintLearn.debug.xcconfig"; sourceTree = "<group>"; };
+		562E7B19EE1873F0A9AEB024 /* Pods_TinyConstraintLearn.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TinyConstraintLearn.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		85435A5E846EAA6C41992D40 /* Pods-TinyConstraintLearn.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TinyConstraintLearn.release.xcconfig"; path = "Target Support Files/Pods-TinyConstraintLearn/Pods-TinyConstraintLearn.release.xcconfig"; sourceTree = "<group>"; };
 		BA3AC044236DC8B300299198 /* TinyConstraintLearn.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TinyConstraintLearn.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BA3AC047236DC8B300299198 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BA3AC049236DC8B300299198 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +30,8 @@
 		BA3AC050236DC8B600299198 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BA3AC053236DC8B600299198 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BA3AC055236DC8B600299198 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BA3AC05B236DCB3900299198 /* CustomView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomView.swift; sourceTree = "<group>"; };
+		BA3AC05D236DCE2900299198 /* ControllerExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ControllerExtension.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +39,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5CA76923ED88CFCBBF4A9FA4 /* Pods_TinyConstraintLearn.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		026ADED5226865EA1FEF83B8 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				562E7B19EE1873F0A9AEB024 /* Pods_TinyConstraintLearn.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		29E3381422A3326F922227D2 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				120BB29AF9B51ADE1EFCB6B1 /* Pods-TinyConstraintLearn.debug.xcconfig */,
+				85435A5E846EAA6C41992D40 /* Pods-TinyConstraintLearn.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		BA3AC03B236DC8B300299198 = {
 			isa = PBXGroup;
 			children = (
 				BA3AC046236DC8B300299198 /* TinyConstraintLearn */,
 				BA3AC045236DC8B300299198 /* Products */,
+				29E3381422A3326F922227D2 /* Pods */,
+				026ADED5226865EA1FEF83B8 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -59,6 +87,8 @@
 				BA3AC047236DC8B300299198 /* AppDelegate.swift */,
 				BA3AC049236DC8B300299198 /* SceneDelegate.swift */,
 				BA3AC04B236DC8B300299198 /* ViewController.swift */,
+				BA3AC05D236DCE2900299198 /* ControllerExtension.swift */,
+				BA3AC05B236DCB3900299198 /* CustomView.swift */,
 				BA3AC04D236DC8B300299198 /* Main.storyboard */,
 				BA3AC050236DC8B600299198 /* Assets.xcassets */,
 				BA3AC052236DC8B600299198 /* LaunchScreen.storyboard */,
@@ -74,9 +104,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = BA3AC058236DC8B600299198 /* Build configuration list for PBXNativeTarget "TinyConstraintLearn" */;
 			buildPhases = (
+				7D13BF6E16ABFF2032B1B4F7 /* [CP] Check Pods Manifest.lock */,
 				BA3AC040236DC8B300299198 /* Sources */,
 				BA3AC041236DC8B300299198 /* Frameworks */,
 				BA3AC042236DC8B300299198 /* Resources */,
+				086BDFF869EEB209833A5119 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -133,14 +165,58 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		086BDFF869EEB209833A5119 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TinyConstraintLearn/Pods-TinyConstraintLearn-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TinyConstraintLearn/Pods-TinyConstraintLearn-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-TinyConstraintLearn/Pods-TinyConstraintLearn-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7D13BF6E16ABFF2032B1B4F7 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TinyConstraintLearn-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		BA3AC040236DC8B300299198 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				BA3AC04C236DC8B300299198 /* ViewController.swift in Sources */,
+				BA3AC05C236DCB3900299198 /* CustomView.swift in Sources */,
 				BA3AC048236DC8B300299198 /* AppDelegate.swift in Sources */,
 				BA3AC04A236DC8B300299198 /* SceneDelegate.swift in Sources */,
+				BA3AC05E236DCE2900299198 /* ControllerExtension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -282,6 +358,7 @@
 		};
 		BA3AC059236DC8B600299198 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 120BB29AF9B51ADE1EFCB6B1 /* Pods-TinyConstraintLearn.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -300,6 +377,7 @@
 		};
 		BA3AC05A236DC8B600299198 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 85435A5E846EAA6C41992D40 /* Pods-TinyConstraintLearn.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
